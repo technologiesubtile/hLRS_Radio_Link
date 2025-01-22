@@ -1,7 +1,7 @@
 # hLRS_Radio_Link
 Homebrew OTA protocol for ELRS modules and CRSF protocol
 
-The ELRS transceiver modules used in RC models happen to be almost identical to the hardware of my previous project, SX1281 BLE transceiver. With the exception that at the place of the ESP8266 and its external 4MB flash memory there is a ESP8285 with 1 MB internal flash. If the 4 MB are not needed, the internal flash is an advantage because the ESP8255 is protected against readout. 
+The ELRS transceiver modules used in RC models happen to be almost identical to the hardware of my previous project, SX1281 BLE transceiver. With the exception that at the place of the ESP8266 and its external 4MB flash memory there is a ESP8285 with 1 MB internal flash. If the 4 MB are not needed, the internal flash is an advantage because the ESP8285 is protected against readout. 
 
 It was straightforward to have the previously written firmware run on this much more compact module by very few minor adjustments. After this, it is challenging to write own firmware for the module acting as RC transceiver.
 
