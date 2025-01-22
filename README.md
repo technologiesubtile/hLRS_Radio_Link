@@ -3,11 +3,11 @@ Homebrew OTA protocol for ELRS modules and CRSF protocol
 
 The ELRS transceiver modules used in RC models happen to be almost identical to the hardware of my previous project, SX1281 BLE transceiver. With the exception that at the place of the ESP8266 and its external 4MB flash memory there is a ESP8285 with 1 MB internal flash. If the 4 MB are not needed, the internal flash is an advantage because the ESP8285 is protected against readout. 
 
-It was straightforward to have the previously written firmware run on this much more compact module by very few minor adjustments. After this, it is challenging to write own firmware for the module acting as RC transceiver.
+It was straightforward to have the previously written firmware run on this much more compact module by very few minor portations. After this, it is challenging to write own firmware for the module acting as RC transceiver.
 
 ![dronedraw](https://github.com/user-attachments/assets/a74cffe3-0760-4201-8d72-562839fc0606)
 
-The objective is that it remains compatible to the CRSF standard on the wired side. Furthermore, autodetection of its roll as "transmitter" or "receiver" shall be implemented. On both sides of the radio link, there is actually a transceiver because the link is bidirectional for transmitting telemetry data over the downlink and to be able to monitor the link quality at all times. So far, the so called "receiver" modules can also be use as "transmitter" but need to be flashed with specifically built version of the firmware.
+The objective is that it remains compatible to the CRSF standard on the wired side. Furthermore, autodetection of its roll as "transmitter" or "receiver" shall be implemented. On both sides of the radio link, there is actually a transceiver because the link is bidirectional for transmitting telemetry data over the downlink and to be able to monitor the link quality at all times. So far, the so called "receiver" modules can also be used as "transmitter" but need to be flashed with specifically built version of the firmware.
 
 Another functionality shall be the synchronization of the timers on both sides such that a FHSS can be implemented in the future.
 
