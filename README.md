@@ -69,17 +69,17 @@ Frequencies, parameters of ELRS :
 
 https://www.rcgroups.com/forums/showthread.php?4144003-New-2-4G-LORA-protocol/page19
 
-p. 19 #279 waterfall diagrams; above he says he choose bind frequency 2452 MHz; the channel bandwidth is 812 Khz(set in SX1280 register). He set up a range of 68 hopping frequencies of 1MHZ apart; this is a group trying to write own software
+on p. 19 #279 waterfall diagrams; above he says he choose bind frequency 2452 MHz; the channel bandwidth is 812 Khz (set in SX1280 register). He set up a range of 68 hopping frequencies 1 MHZ apart; this is a group trying to write own software
 
+
+Sensitivity performances as function of LoRa parameters; see table below RF mode Indexes with sensitivity minima in dBm :
 
 https://www.expresslrs.org/info/signal-health/#rf-mode-indexes-rfmd
 
-see table below RF mode Indexes with sensitivity minima in dBm
 
+Ranges in km :
 
 https://culturefpv.fr/expresslrs-un-nouveau-lien-radio-20210418/
-
-ranges in km
 
 
 Wilhelm Meier, Funktionsmodellbau und Fernbedienungen :
