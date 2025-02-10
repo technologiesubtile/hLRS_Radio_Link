@@ -17,42 +17,68 @@ The aim here was not to compete with the performance of the existing ELRS. The r
 
 A similar project exists under the name of mLRS. However, this is also a protocol that is more oriented at increased performance. In this context, it is often claimed that in principle the radio link should just be a plain transparent serial connection. Since basically, a quadrocopter can "fly by wire" simply by connecting a serial cable from the RC to the flight controller. The comparison holds only partially, because the radio link is only half-duplex. Consequently, inbound packets must be dropped or otherwise would have to be queued (i opt for dropping them..). Also it should be mentioned that besides sending packets to the opposite side, the transceivers must generate some packets locally and insert them into the stream: when using a serial cable, there would be no "link statistics" and the respective packet, although formally a telemetry frame, cannot originate from the flight controller. To obtain such a packet, the two transceivers must send each other their link data, and at the RC side, the packet must then be composed from this joint data. Likewise, in the case of connection loss, the receiver must generate a channel control frame with the failsafe flag set and send it to the flight controller.
 
+
+Watch on youtube a demonstration of the time slots for telemetry downlink :
+
+https://www.youtube.com/watch?v=aI1-UF5SBdM
+
+
 For further information, feel free to PM me at heinrich DOT diesinger AT gmx DOT net.
 
 
-Watch on youtube a demonstration of the time slots for telemetry downlink: https://www.youtube.com/watch?v=aI1-UF5SBdM
+
 
 
 Links:
 
 Sbus protocol sniffing and reverse engineering of the FrSky16 protocol, using Realterm :
+
 https://www.youtube.com/watch?v=CULas2y_sXI
 
+
 Sniffing/parsing, speedybee f405 r2, t2, CRSF; types of frames, Python script for translating/displaying telemetry frames :
+
 https://medium.com/@mike_polo/parsing-crsf-protocol-from-a-flight-controller-with-a-raspberry-pi-for-telemetry-data-79e9426ff943
 
+
 CRSF wire protocol, the wire side of the protocol is the same for elrs; duplex, half duplex, autobaud, packet types :
+
 https://github.com/crsf-wg/crsf/wiki/Physical-Layer
 
+
 Vulnerabilities of ELRS :
+
 https://www.nccgroup.com/us/research-blog/technical-advisory-expresslrs-vulnerabilities-allow-for-hijack-of-control-link/
+
 https://securityaffairs.com/133146/hacking/expresslrs-protocol-flaws-drones-takeover.html
 
+
 Vulnerabilities of TBS Crossfire, OTA sniffing using ESP32 Heltec board, wire/SPI sniffing using FPGA board :
+
 https://www.g3gg0.de/fpv/fpv-analysis-of-tbs-crossfire/
 
+
 Frequencies, parameters of ELRS :
+
 https://www.rcgroups.com/forums/showthread.php?4144003-New-2-4G-LORA-protocol/page19
+
 p. 19 #279 waterfall diagrams; above he says he choose bind frequency 2452 MHz; the channel bandwidth is 812 Khz(set in SX1280 register). He set up a range of 68 hopping frequencies of 1MHZ apart; this is a group trying to write own software
 
+
 https://www.expresslrs.org/info/signal-health/#rf-mode-indexes-rfmd
+
 see table below RF mode Indexes with sensitivity minima in dBm
 
+
 https://culturefpv.fr/expresslrs-un-nouveau-lien-radio-20210418/
+
 ranges in km
 
+
 Wilhelm Meier, Funktionsmodellbau und Fernbedienungen :
+
 https://github.com/wimalopaan/Electronics
+
 https://www.youtube.com/@wilhelmmeier6124
 
 
