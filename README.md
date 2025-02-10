@@ -18,9 +18,14 @@ The aim here was not to compete with the performance of the existing ELRS. The r
 A similar project exists under the name of mLRS. However, this is also a protocol that is more oriented at increased performance. In this context, it is often claimed that in principle the radio link should just be a plain transparent serial connection. Since basically, a quadrocopter can "fly by wire" simply by connecting a serial cable from the RC to the flight controller. The comparison holds only partially, because the radio link is only half-duplex. Consequently, inbound packets must be dropped or otherwise would have to be queued (i opt for dropping them..). Also it should be mentioned that besides sending packets to the opposite side, the transceivers must generate some packets locally and insert them into the stream: when using a serial cable, there would be no "link statistics" and the respective packet, although formally a telemetry frame, cannot originate from the flight controller. To obtain such a packet, the two transceivers must send each other their link data, and at the RC side, the packet must then be composed from this joint data. Likewise, in the case of connection loss, the receiver must generate a channel control frame with the failsafe flag set and send it to the flight controller.
 
 
-Watch on youtube a demonstration of the time slots for telemetry downlink :
+Watch on youtube a demonstration of the time slots (TDMA) for telemetry downlink from multiple receivers :
 
 https://www.youtube.com/watch?v=aI1-UF5SBdM
+
+
+![P1093242](https://github.com/user-attachments/assets/f0c80746-878c-47fe-a100-388d69e4cc0a)  ![P1093253](https://github.com/user-attachments/assets/d1eb3136-74f8-4958-a969-149b606cd933)
+
+ELRS module, front with the SX1281 and a PA/LNA, and back with the ESP8385
 
 
 For further information, feel free to PM me at heinrich DOT diesinger AT gmx DOT net.
