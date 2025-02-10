@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=aI1-UF5SBdM
 
 ![P1093242](https://github.com/user-attachments/assets/f0c80746-878c-47fe-a100-388d69e4cc0a)  ![P1093253](https://github.com/user-attachments/assets/d1eb3136-74f8-4958-a969-149b606cd933)
 
-ELRS module, front with the SX1281 and a PA/LNA, and back with the ESP8385
+ELRS module, front with the SX1281 and a PA/LNA, and back with the ESP8285
 
 
 For further information, feel free to PM me at heinrich DOT diesinger AT gmx DOT net.
