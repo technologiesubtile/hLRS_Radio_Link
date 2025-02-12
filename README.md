@@ -22,6 +22,10 @@ Watch on youtube a demonstration of the time slots (TDMA) for telemetry downlink
 
 https://www.youtube.com/watch?v=aI1-UF5SBdM
 
+And a demonstration of channel hopping as seen on the waterfall and spectrum scope of a SDR :
+
+https://youtu.be/TBFXAcPkk0U
+
 
 
 ![P1093242](https://github.com/user-attachments/assets/f0c80746-878c-47fe-a100-388d69e4cc0a)  ![P1093253](https://github.com/user-attachments/assets/d1eb3136-74f8-4958-a969-149b606cd933)
